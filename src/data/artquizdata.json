@@ -1,0 +1,55 @@
+{
+  "questions": [
+    {
+      "question": "Welcher Künster steht für welche Epoche",
+      "answerpairs": [
+        {
+          "artist": "Botticelli",
+          "era": "Renaissance"
+        },
+        {
+          "artist": "Caravaggio",
+          "era": "Barock"
+        },
+        {
+          "artist": "Ingres",
+          "era": "Klassizismus"
+        }
+      ]
+    },
+    {
+      "Frage": "Wer malte welches Gemälde?",
+      "Antwortpaare": [
+        {
+          "artist": "Caspar David Friedrich",
+          "artwork": "'Der Wanderer im Nebelmeer' (1818)"
+        },
+        {
+          "artist": "Gerhard Richter",
+          "artwork": "'Betty' (1991)"
+        },
+        {
+          "artist": "Maria Lassning",
+          "artwork": "'Zwei Arten zu sein (Doppelselbstporträt)'(2000)"
+        }
+      ]
+    },
+    {
+      "Frage": "Wer ist der berühmte Bildhauer der Skulptur 'Der Denker'?",
+      "Antwortpaare": [
+        {
+          "artist": "Auguste Rodin",
+          "korrekt": true
+        },
+        {
+          "artist": "Michelangelo",
+          "korrekt": false
+        },
+        {
+          "artist": "Alberto Giacometti",
+          "korrekt": false
+        }
+      ]
+    }
+  ]
+}
