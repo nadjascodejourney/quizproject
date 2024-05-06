@@ -51,5 +51,59 @@
         }
       ]
     }
+  ],
+  
+  "filmquestions": [
+    {
+      "question": "Wer spielte in einem Tarantino-Film mit?",
+      "answerpairs": [
+        {
+          "actor": "Jonny Depp",
+          "correct": false
+        },
+        {
+          "actor": "Brad Pitt",
+          "correct": true
+        },
+        {
+          "actor": "Uma Thurman",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Ordne die Awards den jeweiligen Filmen zu.",
+      "answerpairs": [
+        {
+          "film": "Oppenheimer",
+          "award": "Oscar"
+        },
+        {
+          "film": "Antomie eines Falls",
+          "award": "Goldene Palme"
+        },
+        {
+          "film": "Blond",
+          "award": "Goldene Himbeere"
+        }
+      ]
+    },
+    {
+      "question": "Ordne die Filme ihrem Entstehungsjahr zu.",
+      "answerpairs": [
+        {
+          "film": "Psycho",
+          "year": 1960
+        },
+        {
+          "film": "Der Pate",
+          "year": 1972
+        },
+        {
+          "film": "Pulp Fiction",
+          "year": 1994
+        }
+      ]
+    }
   ]
 }
