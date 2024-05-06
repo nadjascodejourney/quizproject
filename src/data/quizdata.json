@@ -1,5 +1,5 @@
 {
-  "questions": [
+  "artquestions": [
     {
       "question": "Welcher Künster steht für welche Epoche",
       "answerpairs": [
@@ -18,8 +18,8 @@
       ]
     },
     {
-      "Frage": "Wer malte welches Gemälde?",
-      "Antwortpaare": [
+      "question": "Wer malte welches Gemälde?",
+      "answerpairs": [
         {
           "artist": "Caspar David Friedrich",
           "artwork": "'Der Wanderer im Nebelmeer' (1818)"
@@ -35,19 +35,19 @@
       ]
     },
     {
-      "Frage": "Wer ist der berühmte Bildhauer der Skulptur 'Der Denker'?",
-      "Antwortpaare": [
+      "question": "Wer ist der berühmte Bildhauer der Skulptur 'Der Denker'?",
+      "answerpairs": [
         {
           "artist": "Auguste Rodin",
-          "korrekt": true
+          "correct": true
         },
         {
           "artist": "Michelangelo",
-          "korrekt": false
+          "correct": false
         },
         {
           "artist": "Alberto Giacometti",
-          "korrekt": false
+          "correct": false
         }
       ]
     }
