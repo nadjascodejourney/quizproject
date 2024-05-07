@@ -4,15 +4,16 @@ import NotFoundPage from "../pages/NotFoundPage.jsx";
 import MainPage from "../pages/MainPage.jsx";
 import QuizPage from "../pages/QuizPage.jsx";
 import ResultPage from "../pages/ResultPage.jsx";
+import Layout from "../layout/Layout.jsx";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Layout />,
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/mainpage",
+        path: "/",
         element: <MainPage />,
       },
       {
