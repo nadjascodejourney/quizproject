@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import StartButton from "../components/StartButton"
+import StartButton from "../components/StartButton";
 
 const MainPage = () => {
   return (
     <div>
       <nav>
         <NavLink to="/quizpage">
-          <StartButton/>
+          <StartButton />
         </NavLink>
       </nav>
     </div>
