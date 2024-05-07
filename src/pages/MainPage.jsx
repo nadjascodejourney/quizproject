@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Layout from "../layout/Layout";
 
 const MainPage = () => {
   return (

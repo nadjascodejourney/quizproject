@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App.jsx";
 import NotFoundPage from "../pages/NotFoundPage.jsx";
 import MainPage from "../pages/MainPage.jsx";
 import QuizPage from "../pages/QuizPage.jsx";
