@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom"
+
 const AnswerButton = () => {
   return (
-    <div>AnswerButton</div>
+    <div>
+      <submit>
+      <Link to="/QuizPage">Submit</Link>
+      </submit>
+    </div>
   )
 }
 

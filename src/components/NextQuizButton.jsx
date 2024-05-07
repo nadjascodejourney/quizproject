@@ -4,7 +4,7 @@ const NextQuizButton = () => {
   return (
     <div>
       <button>
-        <Link to="/QuizPage">Nächste Frage</Link>
+        <Link to="/QuizPage">Next Question</Link>
       </button>
 
     </div>
