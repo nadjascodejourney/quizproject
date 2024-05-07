@@ -1,6 +1,13 @@
+import { Link } from "react-router-dom"
+
 const NextQuizButton = () => {
   return (
-    <div>NextQuizButton</div>
+    <div>
+      <button>
+        <Link to="/QuizPage">Nächste Frage</Link>
+      </button>
+
+    </div>
   )
 }
 
