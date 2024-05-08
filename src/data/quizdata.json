@@ -1,51 +1,72 @@
 {
   "artquestions": [
     {
+      "questionId": 1,
       "question": "Welcher Künster steht für welche Epoche",
       "answerpairs": [
         {
+          "questionId": 1,
+          "answerId": 101,
           "artist": "Botticelli",
           "era": "Renaissance"
         },
         {
+          "questionId": 1,
+          "answerId": 102,
           "artist": "Caravaggio",
           "era": "Barock"
         },
         {
+          "questionId": 1,
+          "answerId": 103,
           "artist": "Ingres",
           "era": "Klassizismus"
         }
       ]
     },
     {
+      "questionId": 2,
       "question": "Wer malte welches Gemälde?",
       "answerpairs": [
         {
+          "questionId": 2,
+          "answerId": 104,
           "artist": "Caspar David Friedrich",
           "artwork": "'Der Wanderer im Nebelmeer' (1818)"
         },
         {
+          "questionId": 2,
+          "answerId": 105,
           "artist": "Gerhard Richter",
           "artwork": "'Betty' (1991)"
         },
         {
+          "questionId": 2,
+          "answerId": 106,
           "artist": "Maria Lassning",
           "artwork": "'Zwei Arten zu sein (Doppelselbstporträt)'(2000)"
         }
       ]
     },
     {
+      "questionId": 3,
       "question": "Wer ist der berühmte Bildhauer der Skulptur 'Der Denker'?",
       "answerpairs": [
         {
+          "questionId": 3,
+          "answerId": 107,
           "artist": "Auguste Rodin",
           "correct": true
         },
         {
+          "questionId": 3,
+          "answerId": 108,
           "artist": "Michelangelo",
           "correct": false
         },
         {
+          "questionId": 3,
+          "answerId": 109,
           "artist": "Alberto Giacometti",
           "correct": false
         }
@@ -55,51 +76,72 @@
 
   "filmquestions": [
     {
+      "questionId": 4,
       "question": "Wer spielte in einem Tarantino-Film mit?",
       "answerpairs": [
         {
+          "questionId": 4,
+          "answerId": 110,
           "actor": "Jonny Depp",
           "correct": false
         },
         {
+          "questionId": 4,
+          "answerId": 111,
           "actor": "Brad Pitt",
           "correct": true
         },
         {
+          "questionId": 4,
+          "answerId": 112,
           "actor": "Uma Thurman",
           "correct": true
         }
       ]
     },
     {
+      "questionId": 5,
       "question": "Ordne die Awards den jeweiligen Filmen zu.",
       "answerpairs": [
         {
+          "questionId": 5,
+          "answerId": 113,
           "film": "Oppenheimer",
           "award": "Oscar"
         },
         {
+          "questionId": 5,
+          "answerId": 114,
           "film": "Antomie eines Falls",
           "award": "Goldene Palme"
         },
         {
+          "questionId": 5,
+          "answerId": 115,
           "film": "Blond",
           "award": "Goldene Himbeere"
         }
       ]
     },
     {
+      "questionId": 6,
       "question": "Ordne die Filme ihrem Entstehungsjahr zu.",
       "answerpairs": [
         {
+          "questionId": 6,
+          "answerId": 116,
           "film": "Psycho",
           "year": 1960
         },
         {
+          "questionId": 6,
+          "answerId": 117,
           "film": "Der Pate",
           "year": 1972
         },
         {
+          "questionId": 6,
+          "answerId": 118,
           "film": "Pulp Fiction",
           "year": 1994
         }
