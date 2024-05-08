@@ -1,6 +1,5 @@
-/* In Ihrer quizPage.module.css oder einer spezifischen CSS-Datei */
 .tooltipmodal {
-  position: fixed; /* oder absolute, je nachdem, wo Sie das Modal anzeigen möchten */
+  position: fixed; /* oder absolute, je nachdem, wo Sie Modal hin soll */
   top: 50%; /* Anpassen, um das Modal in der Mitte des Bildschirms anzuzeigen */
   left: 50%;
   transform: translate(-50%, -50%); /* Zentriert das Modal */
