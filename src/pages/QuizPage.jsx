@@ -7,11 +7,13 @@ import HelpButton from "../components/HelpButton";
 import AnswerButton from "../components/AnswerButton";
 import NextQuizButton from "../components/NextQuizButton";
 import ShowScoreButton from "../components/ShowScoreButton";
+import styles from "../styles/quizPage.module.css";
 
 const QuizPage = () => {
   return (
-    <div className="quiz-container">
+    <div className={styles.quizcontainer}>
       <section className="back-button">
+        {/* müsste man evtl. in Header verlagern, siehe Positionierung in Figma */}
         <BackButton />
       </section>
 
