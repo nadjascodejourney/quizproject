@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const AnswerButton = () => {
   return (
     <div>
-      <submit>
-      <Link to="/QuizPage">Submit</Link>
-      </submit>
+      <button>
+        <Link to="/QuizPage">Antworten</Link>
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default AnswerButton
+export default AnswerButton;
