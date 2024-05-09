@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const ShowScoreButton = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <button>
-        <Link to="/ResultPage">View your Score</Link>
-      </button>
+      <button onClick={() => navigate("resultpage")}>Dein Ergebnis</button>
     </div>
-  )
-}
+  );
+};
 
-export default ShowScoreButton
+export default ShowScoreButton;

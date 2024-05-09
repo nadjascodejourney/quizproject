@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const BackButton = () => {
+  const navigate = useNavigate();
 
-  return <div>
-
-    <button>
-      <Link to="/">Go Home</Link>
-    </button>
-
-  </div>;
+  return (
+    <div>
+      <button onClick={() => navigate("/")}>Zurück zu Home</button>
+    </div>
+  );
 };
 
 export default BackButton;

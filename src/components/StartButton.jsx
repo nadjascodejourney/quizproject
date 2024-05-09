@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 const StartButton = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <button>
-        <Link to="/QuizPage">Quiz starten</Link>
-      </button>
+      <button onClick={() => navigate("/quizpage")}>Quiz starten</button>
     </div>
   );
 };

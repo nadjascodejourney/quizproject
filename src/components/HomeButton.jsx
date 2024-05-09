@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const HomeButton = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <button>
-        <Link to="/">Back to start</Link>
-      </button>
+      <button onClick={() => navigate("/")}>Home</button>
     </div>
   );
 };
