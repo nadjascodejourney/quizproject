@@ -13,10 +13,13 @@ import ShowScoreButton from "../components/ShowScoreButton";
 
 // css
 import styles from "../styles/quizPage.module.css";
+import Karusell from "../components/Karusell";
 
 const QuizPage = () => {
   return (
     <div className={styles.quizcontainer}>
+      <Karusell />
+
       {/* Achtung: bei module.css keine Bindestriche in classNames, funktioniert sonst nicht */}
       <section className="back-button">
         {/* müsste man evtl. in Header verlagern, siehe Positionierung in Figma */}
