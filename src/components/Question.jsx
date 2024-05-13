@@ -1,7 +1,9 @@
 const Question = () => {
   return (
-    <div>Question</div>
-  )
-}
+    <div>
+      <h2>{questionsData[questionIndex]?.statement}</h2>
+    </div>
+  );
+};
 
-export default Question
+export default Question;
