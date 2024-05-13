@@ -1,10 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { QuizContext } from "../utils/StateManagement";
 
 const AnswerButton = () => {
-  const navigate = useNavigate();
+  const { handleSubmitAnswers, error } = useContext(QuizContext);
+
   return (
     <div>
-      <button onClick={() => navigate("/quizpage")}>Antworten</button>
+      <button onClick={handleSubmitAnswers}>
+        {error ? "Versuch´s nochmal" : "Antworten"}
+      </button>
     </div>
   );
 };

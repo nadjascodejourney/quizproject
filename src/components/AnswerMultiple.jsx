@@ -1,18 +1,40 @@
-import ArrowButton from "./ArrowButton";
-import CarouselListItems from "./CarouselListItems";
+/* import ArrowButton from "./ArrowButton";
+ */
+/* import CarouselListItems from "./CarouselListItems"; */
+import { useContext } from "react";
+import { QuizContext } from "../utils/StateManagement";
 
-const AnswerMultiple = ({ userAnswer, updateAnswersOrder }) => {
+const AnswerMultiple = () => {
+  const { userAnswer, updateAnswersOrder } = useContext(QuizContext);
+
   return (
-    <div>
+    <div className="questioncontainer">
       {/* Oberes Karusell */}
-      <ArrowButton onClick={() => updateAnswersOrder(0, "-")} arrow={"<"} />
-      <CarouselListItems answers={userAnswer[0]} />
-      <ArrowButton onClick={() => updateAnswersOrder(0, "+")} arrow={">"} />
+      {/*  <ArrowButton onClick={() => updateAnswersOrder(0, "-")} /> */}
+      <button onClick={() => updateAnswersOrder(0, "-")}>{"<="}</button>
+      {/*  <CarouselListItems answers={userAnswer[0]} /> */}
+      <ul>
+        {userAnswer[0]?.length <= 1 && <li></li>}
+        {userAnswer[0]?.map((answer, id) => (
+          <li key={id}>{answer}</li>
+        ))}
+      </ul>
+      <button onClick={() => updateAnswersOrder(0, "+")}>{"=>"}</button>
+
+      {/*  <ArrowButton onClick={() => updateAnswersOrder(0, "+")} /> */}
 
       {/* Unteres Karusell */}
-      <ArrowButton onClick={() => updateAnswersOrder(1, "-")} arrow={"<"} />
-      <CarouselListItems answers={userAnswer[1]} />
-      <ArrowButton onClick={() => updateAnswersOrder(1, "+")} arrow={">"} />
+      {/*  <ArrowButton onClick={() => updateAnswersOrder(1, "-")} /> */}
+      <button onClick={() => updateAnswersOrder(1, "-")}>{"<="}</button>
+      {/*   <CarouselListItems answers={userAnswer[1]} /> */}
+      <ul>
+        {userAnswer[1]?.length <= 1 && <li></li>}
+        {userAnswer[1]?.map((answer, id) => (
+          <li key={id}>{answer}</li>
+        ))}
+      </ul>
+      {/* <ArrowButton onClick={() => updateAnswersOrder(1, "+")} /> */}
+      <button onClick={() => updateAnswersOrder(1, "+")}>{"=>"}</button>
     </div>
   );
 };
