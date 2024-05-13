@@ -1,26 +1,56 @@
 [
   {
-    "type": "art",
-    "questionId": 1,
-    "question": "Welcher Künster steht für welche Epoche",
-    "partone": ["Botticelli", "Caravaggio", "Ingres"],
-    "parttwo": ["Renaissance", "Barock", "Klassizismus"],
-    "answerpairs": [
-      {
-        "questionId": 1,
-        "answerId": 101,
-        "solution": [0, 0]
-      },
-      {
-        "questionId": 1,
-        "answerId": 102,
-        "solution": [1, 1]
-      },
-      {
-        "questionId": 1,
-        "answerId": 103,
-        "solution": [2, 2]
-      }
+    "id": "1",
+    "statement": "Welcher Künstler steht für welche Epoche?",
+    "answers": [
+      ["Boticelli", "Renaissance"],
+      ["Caravaggio", "Barock"],
+      ["Ingres", "Klassizismus"]
+    ]
+  },
+  {
+    "id": "2",
+    "statement": "Wer malte welches Gemälde?",
+    "answers": [
+      ["Casper David Friedrich", "Der Wanderer im Nebelmeer"],
+      ["Gerhard Richter", "Betty"],
+      ["Maria Lassning", "Zwei Arten zu sein"]
+    ]
+  },
+  {
+    "id": "3",
+    "statement": "Welches Werk ist von welchem Bildhauer.",
+    "answers": [
+      ["Auguste Rodin", "Der Denker"],
+      ["Michelangelo", "David"],
+      ["Henry Moore", "King and Queen"]
+    ]
+  },
+  {
+    "id": "4",
+    "statement": "Welche Schaupieler spielen in welchen Filmen mit.",
+    "answers": [
+      ["Jonny Depp", "A Nightmare on Elm Street"],
+      ["Brad Pitt", "Sieben"],
+      ["Uma Thurman", "Pulp Fiction"]
+    ]
+  },
+  {
+    "id": "5",
+    "statement": "Ordne die Awards den jeweiligen Filmen zu.",
+    "answers": [
+      ["Oppenheimer", "Oscar"],
+      ["Anatomie eines Falls", "Goldene Palme"],
+      ["Blond", "Goldene Himbeere"]
+    ]
+  },
+  {
+    "id": "6",
+    "statement": "Ordne die Filme Ihrem Entstehungsjahr zu.",
+    "answers": [
+      ["Psycho", "1960"],
+      ["Der Pate", "1972"],
+      ["Pulp Fiction", "1994"]
     ]
   }
 ]
