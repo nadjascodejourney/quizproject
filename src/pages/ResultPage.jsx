@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import HomeButton from "../components/HomeButton";
+import RestartButton from "../components/RestartButton";
 
 const ResultPage = () => {
   return (
     <div>
       <nav>
         <Link to="/">
-          <HomeButton />
+          <RestartButton/>
         </Link>
       </nav>
     </div>
