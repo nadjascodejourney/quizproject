@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import quizdata from "../data/quizdata.json";
 
-const StateManagement = () => {
+export const QuizContext = createContext(); // Kontext erstellen
+
+const StateManagement = ({ children }) => {
+  // States
   const [questionIndex, setQuestionIndex] = useState(0);
 
   const [availableAnswers, setAvailableAnswers] = useState([]);
@@ -81,7 +84,29 @@ const StateManagement = () => {
     setSuccess(false);
   };
 
-  return <div></div>;
+  return (
+    <QuizContext.Provider
+      value={{
+        quizdata,
+        questionIndex,
+        availableAnswers,
+        userAnswer,
+        error,
+        success,
+        setQuestionIndex,
+        setAvailableAnswers,
+        setUserAnswer,
+        setError,
+        setSuccess,
+        updateAnswersOrder,
+        updateQuestionIndex,
+        handleSubmitAnswers,
+        handleRestart,
+      }}
+    >
+      {children}
+    </QuizContext.Provider>
+  );
 };
 
 export default StateManagement;

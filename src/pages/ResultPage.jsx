@@ -1,15 +1,22 @@
-import { Link } from "react-router-dom";
 import RestartButton from "../components/RestartButton";
+import { useContext } from "react";
+import { QuizContext } from "../utils/StateManagement";
 
 const ResultPage = () => {
+  const { success } = useContext(QuizContext);
+
   return (
-    <div>
-      <nav>
-        <Link to="/">
-          <RestartButton/>
-        </Link>
-      </nav>
-    </div>
+    <>
+      {success ? (
+        <div>
+          <nav>
+            <RestartButton />
+          </nav>
+        </div>
+      ) : (
+        <div></div>
+      )}
+    </>
   );
 };
 

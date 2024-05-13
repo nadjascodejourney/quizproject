@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { QuizContext } from "../utils/StateManagement";
+
 const Question = () => {
+  const { quizdata, questionIndex } = useContext(QuizContext);
+
   return (
     <div>
-      <h2>{questionsData[questionIndex]?.statement}</h2>
+      <h2>{quizdata[questionIndex]?.statement}</h2>
     </div>
   );
 };
