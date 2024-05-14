@@ -1,0 +1,11 @@
+{
+  "Spielziel": "Beantworte so viele Fragen wie möglich, um zu gewinnen. Du hast pro Frage nur zwei Leben!",
+  "Spielablauf": [
+    "Sieh dir die Frage oben an.",
+    "Finde die richtigen Antwortpaare, indem du die passenden Teile der Antworten in das mittlere Feld der jeweiligen Reihe bringst. Es gibt pro Frage drei Paare.",
+    "Tippe auf \"Antworten\", um deine Antwort zu überprüfen.",
+    "Wenn du alle drei Paare richtig hast, geht es weiter zur nächsten Frage.",
+    "Wenn du falsch liegst, verlierst du ein Leben und kannst es erneut versuchen, wenn du noch ein Leben hast."
+  ],
+  "Spielende": "Das Spiel endet, wenn du alles richtig beantwortet hast oder deine Leben verloren sind."
+}
