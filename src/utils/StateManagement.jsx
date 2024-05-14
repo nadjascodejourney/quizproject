@@ -26,9 +26,17 @@ const StateManagement = ({ children }) => {
     }
 
     const { answers } = structuredClone(quizdata[questionIndex]);
-    const firstIndex = answers.map((answer) => answer[0]);
-    const secondIndex = answers.map((answer) => answer[1]);
-    setUserAnswer([firstIndex, secondIndex]);
+
+    const shuffledAnswers = answers.sort(() => Math.random() - 0.5);
+
+
+    const shuffledFirstIndex = shuffledAnswers.map((answer) => answer[0]);
+    const shuffledSecondIndex = shuffledAnswers.map((answer) => answer[1]);
+
+    shuffledFirstIndex.sort(() => Math.random() - 0.5);
+    shuffledSecondIndex.sort(() => Math.random() - 0.5);
+
+    setUserAnswer([shuffledFirstIndex, shuffledSecondIndex]);
     setAvailableAnswers(quizdata[questionIndex].answers);
     setError(null);
 
