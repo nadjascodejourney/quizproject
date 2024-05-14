@@ -4,7 +4,6 @@
 // styles
 import styles from "../styles/answerMulti.module.css"
 
-
 import { useContext } from "react";
 import { QuizContext } from "../utils/StateManagement";
 
@@ -13,10 +12,10 @@ const AnswerMultiple = () => {
 
   return (
     <div>
-    <section className={styles.answercontainer}>
+    <section className={styles.answerContainer}>
       {/* Oberes Karusell */}
       {/*  <ArrowButton onClick={() => updateAnswersOrder(0, "-")} /> */}
-      <button onClick={() => updateAnswersOrder(0, "-")}>{"<="}</button>
+      <button onClick={() => updateAnswersOrder(0, "-")} className={styles.answerMultiButton}>{"<"}</button>
       {/*  <CarouselListItems answers={userAnswer[0]} /> */}
       <ul>
         {userAnswer[0]?.length <= 1 && <li></li>}
@@ -24,13 +23,13 @@ const AnswerMultiple = () => {
           <li key={id}>{answer}</li>
         ))}
       </ul>
-      <button onClick={() => updateAnswersOrder(0, "+")}>{"=>"}</button>
+      <button onClick={() => updateAnswersOrder(0, "+")} className={styles.answerMultiButton}>{">"}</button>
     </section>
       {/*  <ArrowButton onClick={() => updateAnswersOrder(0, "+")} /> */}
-    <section className={styles.answercontainer}>
+    <section className={styles.answerContainer}>
       {/* Unteres Karusell */}
       {/*  <ArrowButton onClick={() => updateAnswersOrder(1, "-")} /> */}
-      <button onClick={() => updateAnswersOrder(1, "-")}>{"<="}</button>
+      <button onClick={() => updateAnswersOrder(1, "-")} className={styles.answerMultiButton}>{"<"}</button>
       {/*   <CarouselListItems answers={userAnswer[1]} /> */}
       <ul>
         {userAnswer[1]?.length <= 1 && <li></li>}
@@ -39,7 +38,7 @@ const AnswerMultiple = () => {
         ))}
       </ul>
       {/* <ArrowButton onClick={() => updateAnswersOrder(1, "+")} /> */}
-      <button onClick={() => updateAnswersOrder(1, "+")}>{"=>"}</button>
+      <button onClick={() => updateAnswersOrder(1, "+")} className={styles.answerMultiButton}>{">"}</button>
       </section>
     </div>
   );
