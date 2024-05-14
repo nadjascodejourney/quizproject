@@ -1,3 +1,6 @@
+//style
+import styles from "../styles/answerButton.module.css"
+
 import { useContext } from "react";
 import { QuizContext } from "../utils/StateManagement";
 
@@ -5,9 +8,9 @@ const AnswerButton = () => {
   const { handleSubmitAnswers, error } = useContext(QuizContext);
 
   return (
-    <div>
-      <button onClick={handleSubmitAnswers}>
-        {error ? "Versuch´s nochmal" : "Antworten"}
+    <div className={styles.container}>
+      <button onClick={handleSubmitAnswers} className={styles.answerButton}>
+        {error ? "Try Again" : "Antworten"}
       </button>
     </div>
   );
