@@ -5,6 +5,7 @@ import { QuizContext } from "../utils/StateManagement";
 
 const GameOverPage = () => {
   const { gameover } = useContext(QuizContext);
+
   return (
     <>
       {gameover ? (

@@ -29,7 +29,6 @@ const StateManagement = ({ children }) => {
 
     const shuffledAnswers = answers.sort(() => Math.random() - 0.5);
 
-
     const shuffledFirstIndex = shuffledAnswers.map((answer) => answer[0]);
     const shuffledSecondIndex = shuffledAnswers.map((answer) => answer[1]);
 
@@ -43,8 +42,21 @@ const StateManagement = ({ children }) => {
     setLives(2); //* Leben hier zurücksetzen, damit Spieler für jede Frage zwei Leben hat
   }, [questionIndex]);
 
+  // UseEffect für Display GameoverPage
+  useEffect(() => {
+    if (lives <= 0) {
+      setGameover(true);
+      setError(true);
+      setSuccess(false); // Erfolg auf false setzen
+    }
+
+    if (gameover) {
+      console.log("Game Over Seite sollte angezeigt werden");
+    }
+  }, [lives]);
+
   //* Funktion zum Prüfen, ob genügend Leben vorhanden sind
-  const checkLives = () => {
+  /* const checkLives = () => {
     if (lives <= 0) {
       //! gameover erscheint noch nicht direkt nach Verspielen des letzten Lebens
       setGameover(true);
@@ -54,7 +66,7 @@ const StateManagement = ({ children }) => {
       return false; // return false weil wir die Funktion beenden wollen und checkLives() soll false zurückgeben
     }
     return true; // wenn Leben vorhanden sind, dann geben wir true zurück; wenn wir hier nichts schreiben, würde die Futnktion undefined zurückgeben
-  };
+  }; */
 
   const updateAnswersOrder = (index, action) => {
     setError(null);
@@ -82,12 +94,12 @@ const StateManagement = ({ children }) => {
 
   const handleSubmitAnswers = () => {
     //* Überprüfen ob genügend Leben vorhanden sind, bevor SubmitFunktion weiter ausgeführt wird
-    if (checkLives() === false) {
+    /* if (checkLives() === false) {
       // wenn keine Leben vorhanden sind und checklives() oben false returned, dann beenden wir die Funktion
       setError(true);
       setGameover(true);
       return; // return, damit die Funktion beendet wird
-    }
+    } */
 
     if (userAnswer[0][1] === undefined || userAnswer[1][1] === undefined) {
       setError(null);
