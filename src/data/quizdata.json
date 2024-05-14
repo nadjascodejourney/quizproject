@@ -5,25 +5,25 @@
     "answers": [
       ["Boticelli", "Renaissance"],
       ["Caravaggio", "Barock"],
-      ["Ingres", "Klassizismus"]
+      ["Monet", "Impressionismus"]
     ]
   },
   {
     "id": "2",
     "statement": "Wer malte welches Gemälde?",
     "answers": [
-      ["Casper David Friedrich", "Der Wanderer im Nebelmeer"],
-      ["Gerhard Richter", "Betty"],
-      ["Maria Lassning", "Zwei Arten zu sein"]
+      ["Edvard Munch", "Der Schrei"],
+      ["Frida Kahlo", "Diego und Ich"],
+      ["Pablo Picasso", "Guernica"]
     ]
   },
   {
     "id": "3",
-    "statement": "Welches Werk ist von welchem Bildhauer.",
+    "statement": "Welches Merkmal gehört zu welcher Epoche?",
     "answers": [
-      ["Auguste Rodin", "Der Denker"],
-      ["Michelangelo", "David"],
-      ["Henry Moore", "King and Queen"]
+      ["Realismus", "Sozialkritik"],
+      ["Kubismus", "Geometrische Formen"],
+      ["Surrealismus", "Symbole und Träume"]
     ]
   },
   {
