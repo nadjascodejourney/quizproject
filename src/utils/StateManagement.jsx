@@ -15,6 +15,10 @@ const StateManagement = ({ children }) => {
 
   const [success, setSuccess] = useState(null);
 
+  const [lives, setLives] = useState(2); // Leben pro Frage
+
+  const [gameover, setGameover] = useState(false); // Gameover-Status
+
   useEffect(() => {
     if (questionIndex >= quizdata.length) {
       setSuccess(true);
@@ -27,7 +31,22 @@ const StateManagement = ({ children }) => {
     setUserAnswer([firstIndex, secondIndex]);
     setAvailableAnswers(quizdata[questionIndex].answers);
     setError(null);
+
+    setLives(2); //* Leben hier zurücksetzen, damit Spieler für jede Frage zwei Leben hat
   }, [questionIndex]);
+
+  //* Funktion zum Prüfen, ob genügend Leben vorhanden sind
+  const checkLives = () => {
+    if (lives <= 0) {
+      //! gameover erscheint noch nicht direkt nach Verspielen des letzten Lebens
+      setGameover(true);
+      setError(true);
+      setSuccess(false); // Erfolg auf false setzen
+
+      return false; // return false weil wir die Funktion beenden wollen und checkLives() soll false zurückgeben
+    }
+    return true; // wenn Leben vorhanden sind, dann geben wir true zurück; wenn wir hier nichts schreiben, würde die Futnktion undefined zurückgeben
+  };
 
   const updateAnswersOrder = (index, action) => {
     setError(null);
@@ -54,6 +73,14 @@ const StateManagement = ({ children }) => {
   };
 
   const handleSubmitAnswers = () => {
+    //* Überprüfen ob genügend Leben vorhanden sind, bevor SubmitFunktion weiter ausgeführt wird
+    if (checkLives() === false) {
+      // wenn keine Leben vorhanden sind und checklives() oben false returned, dann beenden wir die Funktion
+      setError(true);
+      setGameover(true);
+      return; // return, damit die Funktion beendet wird
+    }
+
     if (userAnswer[0][1] === undefined || userAnswer[1][1] === undefined) {
       setError(null);
       updateQuestionIndex();
@@ -68,6 +95,7 @@ const StateManagement = ({ children }) => {
     );
     if (!answerIsCorrect) {
       setError(true);
+      setLives(lives - 1); //* Leben abziehen
     } else {
       const filteredUserAnswers = userAnswer.map((answerArray) =>
         answerArray.filter((answer) => !submittedAnswer.includes(answer))
@@ -82,6 +110,7 @@ const StateManagement = ({ children }) => {
     setAvailableAnswers([]);
     setError(null);
     setSuccess(false);
+    /*     setLives(2); // Leben zurücksetzen => nicht hier sondern im useEffect. Wenn wir das hier machen, beziehen sich die Leben auf das ganze Spiel und nicht auf jede Frage einzeln */
   };
 
   return (
@@ -93,11 +122,14 @@ const StateManagement = ({ children }) => {
         userAnswer,
         error,
         success,
+        lives,
+        gameover,
         setQuestionIndex,
         setAvailableAnswers,
         setUserAnswer,
         setError,
         setSuccess,
+        setLives,
         updateAnswersOrder,
         updateQuestionIndex,
         handleSubmitAnswers,

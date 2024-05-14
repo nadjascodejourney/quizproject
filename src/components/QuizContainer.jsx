@@ -10,11 +10,11 @@ import HelpButton from "./HelpButton";
 import AnswerButton from "./AnswerButton";
 
 const QuizContainer = () => {
-  const { success } = useContext(QuizContext);
+  const { success, gameover } = useContext(QuizContext);
 
   return (
     <>
-      {success ? (
+      {success || gameover ? (
         <div></div>
       ) : (
         <div>
