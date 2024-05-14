@@ -5,15 +5,16 @@ import instructions from "../data/tooltipData.json";
 const GameInstructions = () => {
   return (
     <div className={styles.instructionwrapper}>
+      <img src="/assets/icons/lightbulb-svgrepo-com.svg" alt="Lightbulb" />
       {Object.keys(instructions).map((key) => (
         <section key={key}>
           <h3>{key}</h3>
           {Array.isArray(instructions[key]) ? (
-            <ul>
+            <ol className={styles.stepList}>
               {instructions[key].map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
-            </ul>
+            </ol>
           ) : (
             <p>{instructions[key]}</p>
           )}
