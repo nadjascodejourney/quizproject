@@ -2,9 +2,12 @@ import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import { Outlet } from "react-router-dom";
 
+//style
+import styles from "../styles/layout.module.css"
+
 const Layout = () => {
   return (
-    <div>
+    <div className={styles.layoutContainer}>
       <Header />
       <main>
         <Outlet />
