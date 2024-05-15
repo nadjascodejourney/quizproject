@@ -43,9 +43,4 @@
   left: 2px;
 }
 
-@media (min-width: 768px) {
-  .restartBtn {
-    padding: 0.75rem 3rem;
-    font-size: 1.25rem;
-  }
-}
+

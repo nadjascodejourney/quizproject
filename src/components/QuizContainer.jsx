@@ -3,7 +3,6 @@ import { QuizContext } from "../utils/StateManagement";
 import styles from "../styles/quizcontainer.module.css";
 
 // components
-import BackButton from "./BackButton";
 import Life from "./Life";
 import Question from "./Question";
 import AnswerMultiple from "./AnswerMultiple";
@@ -19,7 +18,6 @@ const QuizContainer = () => {
         <div></div>
       ) : (
         <div className={styles.innerQuizcontainer}>
-          <BackButton />
           <Life />
           <Question />
           <AnswerMultiple />

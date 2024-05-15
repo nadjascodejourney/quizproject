@@ -1,6 +1,6 @@
 .helpBtn,
 .checkBtn {
-   background-color: #e87991;
+   background-color: #ffffff;
     border: 0 solid #000000;
     border-radius: 50%;
     box-sizing: border-box;
@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    top: 20px;
     margin-left: 320px;
     text-align: center;
     text-decoration: none #000000 solid;
