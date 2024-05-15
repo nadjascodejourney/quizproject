@@ -1,6 +1,6 @@
 @font-face {
     font-family: "caveat";
-    src: url(../../public/fonts/Caveat-Regular.ttf);
+    src: url(/fonts/Caveat-Regular.ttf);
     font-style: normal;
     color: #ffff;
 }
