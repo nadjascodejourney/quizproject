@@ -7,7 +7,7 @@ const BackButton = () => {
 
   return (
     <div>
-      <button onClick={() => navigate("/")} className={styles.backButton}><img src="/public/assets/icons/home-svgrepo-com.svg" alt="Home"/></button>
+      <button onClick={() => navigate("/")} className={styles.backButton}><img src="/assets/icons/home-svgrepo-com.svg" alt="Home"/></button>
     </div>
   );
 };
