@@ -1,0 +1,12 @@
+.instructionwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.stepList {
+  padding: 20px 20px 10px 20px;
+}
