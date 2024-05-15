@@ -7,10 +7,14 @@
 
 .questionContainer {
     display: flex;
+    justify-content: center;
+  
+}
+
+.questionContainer h2 {
     text-align: center;
     font-family: itim;
     color: #f4f1f1;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     width: 360px;
-  
 }

@@ -1,4 +1,11 @@
-.container {
+@font-face {
+  font-family: "itim";
+  src: url(/fonts/Itim-Regular.ttf);
+  font-style: normal;
+}
+
+
+.notFoundContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,22 +13,39 @@
   width: 100vw;
   height: 100vh;
   background: rgb(8, 213, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(8, 213, 255, 1) 0%,
-    rgba(4, 124, 148, 1) 100%,
-    rgba(0, 100, 120, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(8, 213, 255, 1) 0%,
+      rgba(4, 124, 148, 1) 100%,
+      rgba(0, 100, 120, 1) 100%);
 }
 
-.errorwrapper {
+.errorWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
-p {
+.shadowBox {
+  border-radius: 15px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #1f7cc3;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.notFoundContainer h2 {
+  text-align: center;
+  font-family: itim;
+  font-size: 2rem;
+  color: white;
+}
+
+.notFoundContainer p {
+  font-family: itim;
   margin: 20px 15px 30px 15px;
   text-align: center;
+  font-size: 1.5rem;
+  color: white;
 }

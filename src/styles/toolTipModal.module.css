@@ -6,11 +6,12 @@
   left: 50%;
   transform: translate(-50%, -50%); /* Zentriert das Modal */
   z-index: 1; /* Stellt sicher, dass das Modal über anderen Elementen liegt */
-  background-color: #ffffff; /* Optional: Hintergrundfarbe  */
+  background-color: #1f7cc3; /* Optional: Hintergrundfarbe  */
   border: 0;
   padding: 20px 20px; /* Optional: Padding innerhalb des Modals */
   box-shadow: 1px 3px 10px rgba(25, 21, 94, 0.42); /* Optional: Schatten */
-  background-color: #ffffff;
+  background-color: #1f7cc3;
+  border-radius: 15px;
   opacity: 1;
   background-size: 24px 24px;
 }

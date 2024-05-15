@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "bungee";
+    src: url(/fonts/Bungee-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "itim";
+    src: url(/fonts/Itim-Regular.ttf);
+    font-style: normal;
+}
+
+
+
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.gameOver h2 {
+    text-align: center;
+    font-family: bungee;
+    font-size: 7rem;
+    color: #e61a4d;
+    text-shadow: 0 0 10px black;
+    
+
+}
+
+.gameOver p {
+    font-family: itim;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}

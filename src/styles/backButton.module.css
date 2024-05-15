@@ -1,5 +1,5 @@
 .backButton {
-    background-color: #f583a0;
+    background-color: #ffffff;
     border: 0 solid #E5E7EB;
     border-radius: 15px;
     box-sizing: border-box;
@@ -8,8 +8,9 @@
     font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     justify-content: center;
-  
     position: relative;
+    top: 20px;
+    left: 320px;
     text-align: center;
     text-decoration: none #000000 solid;
     text-decoration-thickness: auto;

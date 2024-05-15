@@ -1,10 +1,22 @@
+@font-face {
+  font-family: "caveat";
+  src: url(/fonts/Caveat-Regular.ttf);
+  font-style: normal;
+}
+
+
+
 .instructionwrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  text-align: center;
+  gap: 15px;
   align-items: center;
   margin-top: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .stepList {

@@ -1,40 +1,51 @@
+@font-face {
+  font-family: "itim";
+  src: url(/fonts/Itim-Regular.ttf);
+  font-style: normal;
+}
+
 .homeBtn {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  background-color: #e73d68;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
   color: #ffffff;
+  display: flex;
+  margin-top: 20px;
+  font-family: itim;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.homeBtn:focus {
+  outline: 0;
 }
 
 .homeBtn:after {
   content: "";
-  background-color: #e73d68;
-  width: 100%;
-  z-index: -1;
   position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
 }
 
 .homeBtn:hover:after {
-  top: 0px;
-  left: 0px;
-}
-
-@media (min-width: 768px) {
-  .homeBtn {
-    padding: 13px 50px 13px;
-  }
+  bottom: 2px;
+  left: 2px;
 }
 
 a {
