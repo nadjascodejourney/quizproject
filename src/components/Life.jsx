@@ -11,12 +11,16 @@ const Life = () => {
   const renderHearts = () => {
     const hearts = [];
     for (let i = 0; i < lives; i++) {
-      hearts.push(<span key={i} className={styles.heart}></span>);
+      hearts.push(
+        <span key={i} className={styles.heart}>
+          <img src="/assets/icons/heart-svgrepo-com.svg" alt="heart" />
+        </span>
+      );
     }
     return hearts;
   };
 
-  return <div>{renderHearts()}</div>;
+  return <div className={styles.heartBox}>{renderHearts()}</div>;
 };
 
 export default Life;

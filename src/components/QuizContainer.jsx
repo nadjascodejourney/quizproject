@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { QuizContext } from "../utils/StateManagement";
+import styles from "../styles/quizcontainer.module.css";
 
 // components
 import BackButton from "./BackButton";
@@ -17,7 +18,7 @@ const QuizContainer = () => {
       {success || gameover ? (
         <div></div>
       ) : (
-        <div>
+        <div className={styles.innerQuizcontainer}>
           <BackButton />
           <Life />
           <Question />
