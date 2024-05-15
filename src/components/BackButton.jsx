@@ -1,3 +1,5 @@
+import styles from "../styles/backButton.module.css"
+
 import { useNavigate } from "react-router-dom";
 
 const BackButton = () => {
@@ -5,7 +7,7 @@ const BackButton = () => {
 
   return (
     <div>
-      <button onClick={() => navigate("/")}>Zurück zu Home</button>
+      <button onClick={() => navigate("/")} className={styles.backButton}><img src="/public/assets/icons/home-svgrepo-com.svg" alt="Home"/></button>
     </div>
   );
 };

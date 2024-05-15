@@ -18,7 +18,7 @@
     font-family: caveat;
     width: 360px;
     height: 20vh;
-    padding: 25px;
+    padding: 5px;
 
 }
 
@@ -26,11 +26,11 @@
 ul {
 
     display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 ul li {
@@ -52,6 +52,7 @@ ul li:nth-of-type(2) {
 .buttonBox {
     display: flex;
     gap: 90px;
+    margin-top: 15px;
 }
 
 .answerMultiButton {
