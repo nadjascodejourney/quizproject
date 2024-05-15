@@ -10,7 +10,8 @@
   
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
+    margin-top: 25px;
 }
 
 .answerButton {
@@ -19,15 +20,13 @@
     border-radius: 15px;
     box-sizing: border-box;
     color: #fffcfc;
-    display: flex;
     font-family: caveat;
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     font-weight: 700;
     justify-content: center;
     line-height: 1.75rem;
     padding: .75rem 1.65rem;
     position: relative;
-    text-align: center;
     text-decoration: none #000000 solid;
     text-decoration-thickness: auto;
     width: 50%;

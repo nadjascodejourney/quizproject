@@ -1,47 +1,47 @@
 [
   {
     "id": "1",
-    "statement": "Welcher Künstler steht für welche Epoche?",
+    "statement": "Welche Künstlernamen gehören zusammen?",
     "answers": [
-      ["Boticelli", "Renaiss"],
-      ["Caravag", "Barock"],
-      ["Monet", "Impress"]
+      ["Sandro", "Boticelli"],
+      ["Gerhard", "Richter"],
+      ["Claude", "Monet"]
     ]
   },
   {
     "id": "2",
-    "statement": "Wer malte welches Gemälde?",
+    "statement": "Wer gehört zu welchem Werk?",
     "answers": [
-      ["Edvard ", "Schrei"],
-      ["Frida ", "Diego"],
-      ["Pablo ", "Guernica"]
+      ["Klimt ", "Danaä"],
+      ["Picasso ", "Guernica"],
+      ["Dürer ", "Feldhase"]
     ]
   },
   {
     "id": "3",
-    "statement": "Welches Merkmal gehört zu welcher Epoche?",
+    "statement": "In welchem Jahrhundert war welche Kunstepoche?",
     "answers": [
-      ["Realism", "Sozialk"],
-      ["Kubismus", "Geometrische"],
-      ["Surreali", "Symbole und"]
+      ["Gotik", "12. – 16."],
+      ["Barock", "17. – 18. "],
+      ["Romantik", "18. – 19."]
     ]
   },
   {
     "id": "4",
-    "statement": "Welche Schaupieler spielen in welchen Filmen mit.",
+    "statement": "Welcher Regisseur drehte welchen Film?",
     "answers": [
-      ["Jonny Depp", "A Nightmare"],
-      ["Brad Pitt", "Sieben"],
-      ["Uma Thurman", "Pulp Fiction"]
+      ["Scott", "Alien"],
+      ["Scorsese", "Casino"],
+      ["Anderson", "Magnolia"]
     ]
   },
   {
     "id": "5",
     "statement": "Ordne die Awards den jeweiligen Filmen zu.",
     "answers": [
-      ["Oppenheimer", "Oscar"],
-      ["Anatomie ein", "Goldene"],
-      ["Blond", "Goldene Himbeere"]
+      ["Parasite", "Oscar"],
+      ["Titane", "Palme"],
+      ["Cats", "Himbeere"]
     ]
   },
   {
@@ -50,7 +50,7 @@
     "answers": [
       ["Psycho", "1960"],
       ["Der Pate", "1972"],
-      ["Pulp Fiction", "1994"]
+      ["Shining", "1980"]
     ]
   }
 ]
