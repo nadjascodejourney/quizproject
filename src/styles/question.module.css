@@ -1,7 +1,18 @@
-.questioncontainer {
+@font-face {
+    font-family: "itim";
+    src: url(../../public/fonts/Itim-Regular.ttf);
+    font-style: normal;
+}
+
+
+.questionContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    margin-top: 100px;
+    text-align: center;
+    font-family: itim;
+    color: #f4f1f1;
+    font-size: 1.5rem;
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
 }

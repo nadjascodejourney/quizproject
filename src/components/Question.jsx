@@ -8,7 +8,7 @@ const Question = () => {
   const { quizdata, questionIndex } = useContext(QuizContext);
 
   return (
-    <div className={styles.questioncontainer}>
+    <div className={styles.questionContainer}>
       <h2>{quizdata[questionIndex]?.statement}</h2>
     </div>
   );

@@ -1,18 +1,24 @@
-.answerContainer {
+@font-face {
+    font-family: "caveat";
+    src: url(../../public/fonts/Caveat-Regular.ttf);
+    font-style: normal;
+    color: #ffff;
+}
 
+.answerContainer {
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #ffff;
     font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: caveat;
     width: 360px;
-    height: 25vh;
-    padding: 2px;
+    height: 20vh;
+    padding: 25px;
 
 }
 
@@ -22,24 +28,30 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     padding: 5px;
 }
 
-ul li:nth-of-type(2) {
-    width: 120px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 
 }
 
-li {
-    display: grid;
-    justify-content: center;
+ul li:nth-of-type(2) {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #1f7cc3;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .buttonBox {
     display: flex;
-    gap: 50px;
+    gap: 90px;
 }
 
 .answerMultiButton {
@@ -87,4 +99,3 @@ li {
     bottom: 2px;
     left: 2px;
 }
-

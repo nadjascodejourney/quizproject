@@ -4,7 +4,7 @@
     "statement": "Welcher Künstler steht für welche Epoche?",
     "answers": [
       ["Boticelli", "Renaiss"],
-      ["Caravaggio", "Barock"],
+      ["Caravag", "Barock"],
       ["Monet", "Impress"]
     ]
   },
@@ -12,25 +12,25 @@
     "id": "2",
     "statement": "Wer malte welches Gemälde?",
     "answers": [
-      ["Edvard Munch", "Der Schrei"],
-      ["Frida Kahlo", "Diego und Ich"],
-      ["Pablo Picasso", "Guernica"]
+      ["Edvard ", "Schrei"],
+      ["Frida ", "Diego"],
+      ["Pablo ", "Guernica"]
     ]
   },
   {
     "id": "3",
     "statement": "Welches Merkmal gehört zu welcher Epoche?",
     "answers": [
-      ["Realismus", "Sozialkritik"],
-      ["Kubismus", "Geometrische Formen"],
-      ["Surrealismus", "Symbole und Träume"]
+      ["Realism", "Sozialk"],
+      ["Kubismus", "Geometrische"],
+      ["Surreali", "Symbole und"]
     ]
   },
   {
     "id": "4",
     "statement": "Welche Schaupieler spielen in welchen Filmen mit.",
     "answers": [
-      ["Jonny Depp", "A Nightmare on Elm Street"],
+      ["Jonny Depp", "A Nightmare"],
       ["Brad Pitt", "Sieben"],
       ["Uma Thurman", "Pulp Fiction"]
     ]
@@ -40,7 +40,7 @@
     "statement": "Ordne die Awards den jeweiligen Filmen zu.",
     "answers": [
       ["Oppenheimer", "Oscar"],
-      ["Anatomie eines Falls", "Goldene Palme"],
+      ["Anatomie ein", "Goldene"],
       ["Blond", "Goldene Himbeere"]
     ]
   },
