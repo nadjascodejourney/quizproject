@@ -1,0 +1,4 @@
+.layoutContainer {
+    background: rgb(8, 213, 255);
+    background: linear-gradient(180deg, rgba(8, 213, 255, 1) 0%, rgba(4, 124, 148, 1) 100%, rgba(0, 100, 120, 1) 100%);
+}

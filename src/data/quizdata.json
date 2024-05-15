@@ -3,9 +3,9 @@
     "id": "1",
     "statement": "Welcher Künstler steht für welche Epoche?",
     "answers": [
-      ["Boticelli", "Renaissance"],
+      ["Boticelli", "Renaiss"],
       ["Caravaggio", "Barock"],
-      ["Monet", "Impressionismus"]
+      ["Monet", "Impress"]
     ]
   },
   {

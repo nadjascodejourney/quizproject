@@ -5,32 +5,49 @@
     align-items: center;
     height: 20vh;
 
-    .answerButton {
-        background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
-        border-radius: .5rem;
-        box-sizing: border-box;
-        color: #ffffff;
-        display: flex;
-        font-size: 16px;
-        justify-content: center;
-        padding: 1rem 1.75rem;
-        text-decoration: none;
-        width: 50%;
-        border: 15px;
-        cursor: pointer;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-    }
-
-    .answerButton:hover {
-        background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
-    }
-
-    @media (min-width: 768px) {
-        .answerButton {
-            padding: 1rem 2rem;
-        }
-    }
 }
 
+.answerButton {
+    background-color: #e73d68;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #fffcfc;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 50%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.answerButton:focus {
+    outline: 0;
+}
+
+.answerButton:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.answerButton:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
