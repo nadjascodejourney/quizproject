@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(8, 213, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 213, 255, 1) 0%,
+    rgba(4, 124, 148, 1) 100%,
+    rgba(0, 100, 120, 1) 100%
+  );
+}
+
+.errorwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 20px 15px 30px 15px;
+  text-align: center;
+}
