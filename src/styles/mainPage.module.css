@@ -1,7 +1,25 @@
+@font-face {
+  font-family: "duck";
+  src: url(/fonts/Copyduck.ttf);
+  font-style: normal;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: duck;
+  font-size: 5rem;
+  width: 390px;
+  margin-top: 200px;
+  color: #e61a4d;
+  text-shadow: 0 0 10px black;
+}
+
 .mainarea {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 390px;
-  height: 695px;
+  height: 500px;
 }

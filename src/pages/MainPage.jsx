@@ -5,6 +5,7 @@ import styles from "../styles/mainPage.module.css";
 const MainPage = () => {
   return (
     <div>
+       <h1>Quizell</h1>
       <main className={styles.mainarea}>
         <nav>
           <NavLink to="/quizpage">
